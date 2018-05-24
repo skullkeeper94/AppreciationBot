@@ -10,6 +10,12 @@ import time
 
 bot = commands.Bot(command_prefix= 'ap.')
 
+@bot.event
+async def on_ready():
+    await bot.change_presence(game=discord.Game(name="Type 'ap.help' for commands!")) 
+
+
+
 @bot.command(name='love',
 	description="A little bit of sprinkles for your sundae <3",
 	brief="The name is all you need to know ;)",
