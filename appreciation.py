@@ -20,7 +20,8 @@ async def love(context):
         "I can't even believe what I'm seeing, literal beauty.",
         "People say perfection doesn't exist, at least until they saw you",
         "Y'know, I just can't seem to stop talking to you. Not all addictions are bad though.",
-		"You ever look in a mirror and your reflection winks at you? Of course you have, it's everytime.",
+	"You ever look in a mirror and your reflection winks at you? Of course you have, it's everytime.",
+	"``God looked down and said, "What can I do to make you better?" Little did he know there was nothing he could do.``",
     ]
     await bot.say(random.choice(possible_responses))
 	
