@@ -27,16 +27,12 @@ async def love(context):
         "People say perfection doesn't exist, at least until they saw you",
         "Y'know, I just can't seem to stop talking to you. Not all addictions are bad though.",
 	"You ever look in a mirror and your reflection winks at you? Of course you have, it's everytime.",
-	"``God looked down and said, 'What can I do to make you better?' Little did he know there was nothing he could do.``",
+	"``God looked down and said, 'What can I do to make you better?' Little did he know there was nothing he could do, you were already perfect.``",
+	"Your smile is like sugar; it makes me all giddy and excited.",
+	"A kiss of yours is sweeter than honey and softer than foam, yet I feel the force of love like a bullet.",
     ]
     await bot.say(random.choice(possible_responses))
 	
-@bot.command(name='birthday',
-	description="Someone's getting marrie- I mean...",
-	brief="HAPPY BIRFDAY")
-async def birthday():
-	await bot.say("Fifteen, huh? That's pretty neat honestly. You've made it through **180** months of life starting today. Every second of doubt, hardship, or failure and you're managed to stick through it all. You've brought others up and made the most of their life to this moment the happiest and most cherrished memories. I can't do much besides with words, sorry ;l either or, we love you, okay? You may think you sleep in the shadows but it's obviously the opposite, look at everything everyone has done for you today, how many smiles you bring, everything you do is something we love deeply. I mean, two whole servers contributed to a simple two-worded statement because we care. So, uh, I hope you enjoyed your fifteenth birthday Ally, and for many more to come.")
-	 
 @bot.command(name='art',
 	brief="Use it, it's better.",
 	pass_context=True)
