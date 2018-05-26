@@ -43,29 +43,11 @@ async def lwi():
 async def no():
 	await bot.say("https://image.ibb.co/kOUf5o/no.png")
 	
-@bot.command(name='whois',
-	description="Who's the cutest of em all?",
-	brief="Cuteness contest :)",
-	pass_context=True)
-async def whois(context):
-    possible_responses = [
-        "Queen",
-        "Ally",
-        "Skull",
-	"Sen",
-	"Ayu",
-	"Bran",
-	"June",
-	"Ther",
-	"Cleviee",
-	"(That one girl who burped on Rabbit who's probably really cute)",
-    ]
-    await bot.say(random.choice(possible_responses) + " is the cutest, of course!")
-	
+
 @bot.command(name='art',
 	brief="Use it, it's better.",
 	pass_context=True)
 async def art():
 	await bot.say("https://upload.wikimedia.org/wikipedia/commons/3/34/Florida_Box_Turtle_Digon3.jpg")
 
-bot.run ('NDQ4MzI3MDk3NjUyMzQ2ODkw.DeUizg.DKqE4V8RoaGIR2yvus0R4fKlfys')
+bot.run ('NDQ4MzI3MDk3NjUyMzQ2ODkw.DeUizg.DKqE4V8RoaGIR2yvus0R4fKlfys')
