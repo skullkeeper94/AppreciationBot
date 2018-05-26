@@ -46,5 +46,9 @@ async def dense():
 @bot.command()
 async def lwi():
 	await bot.say("https://image.ibb.co/kXHSFo/live_withit.jpg")
+	
+@bot.command()
+async def no():
+	await bot.say("https://image.ibb.co/kOUf5o/no.png")
 
 bot.run ('NDQ4MzI3MDk3NjUyMzQ2ODkw.DeUizg.DKqE4V8RoaGIR2yvus0R4fKlfys')
