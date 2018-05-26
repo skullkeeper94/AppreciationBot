@@ -49,5 +49,29 @@ async def lwi():
 @bot.command()
 async def no():
 	await bot.say("https://image.ibb.co/kOUf5o/no.png")
+	
+@bot.command(name='whois',
+	description="Who's the cutest?",
+	brief="Who's the cutest?",
+	pass_context=True)
+async def whois(context):
+    possible_responses = [
+        "Ally",
+        "Queen",
+        "Skull",
+        "Ayu",
+	"Sen",
+	"Bran",
+	"June",
+	"Qwerty",
+	"June",
+	"Chiki",
+	"Gendo",
+	"Yami",
+	"BOOKISH",
+	"Cleviee",
+	"Lyra",
+    ]
+    await bot.say(random.choice(possible_responses) + " is the cutest, of course!")
 
 bot.run ('NDQ4MzI3MDk3NjUyMzQ2ODkw.DeUizg.DKqE4V8RoaGIR2yvus0R4fKlfys')
