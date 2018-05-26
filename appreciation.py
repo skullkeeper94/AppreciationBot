@@ -8,13 +8,11 @@ from discord import Game
 from discord.ext.commands import Bot
 import time
 
-bot = commands.Bot(command_prefix= 'ap.')
+bot = commands.Bot(command_prefix= '?')
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game=discord.Game(name="Type 'ap.help' for commands!")) 
-
-
+    await bot.change_presence(game=discord.Game(name="Type '?' for commands!")) 
 
 @bot.command(name='love',
 	description="A little bit of sprinkles for your sundae <3",
@@ -31,13 +29,7 @@ async def love(context):
 	"Your smile is like sugar; it makes me all giddy and excited.",
 	"A kiss of yours is sweeter than honey and softer than foam, yet I feel the force of love like a bullet.",
     ]
-    await bot.say(random.choice(possible_responses))
-	
-@bot.command(name='art',
-	brief="Use it, it's better.",
-	pass_context=True)
-async def art():
-	await bot.say("https://upload.wikimedia.org/wikipedia/commons/3/34/Florida_Box_Turtle_Digon3.jpg")
+await bot.say(random.choice(possible_responses))
 
 @bot.command()
 async def dense():
@@ -50,5 +42,30 @@ async def lwi():
 @bot.command()
 async def no():
 	await bot.say("https://image.ibb.co/kOUf5o/no.png")
+	
+@bot.command(name='whois',
+	description="Who's the cutest of em all?",
+	brief="Cuteness contest :)",
+	pass_context=True)
+async def whois(context):
+    possible_responses = [
+        "Queen",
+        "Ally",
+        "Skull",
+	"Sen",
+	"Ayu",
+	"Bran",
+	"June",
+	"Ther",
+	"Cleviee",
+	"(That one girl who burped on Rabbit who's probably really cute)",
+    ]
+    await bot.say(random.choice(possible_responses) + " is the cutest, of course!")
+	
+@bot.command(name='art',
+	brief="Use it, it's better.",
+	pass_context=True)
+async def art():
+	await bot.say("https://upload.wikimedia.org/wikipedia/commons/3/34/Florida_Box_Turtle_Digon3.jpg")
 
 bot.run ('NDQ4MzI3MDk3NjUyMzQ2ODkw.DeUizg.DKqE4V8RoaGIR2yvus0R4fKlfys')
