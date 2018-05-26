@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix= '?')
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game=discord.Game(name="Type '?' for commands!")) 
+    await bot.change_presence(game=discord.Game(name="Type '?help' for commands!")) 
 
 @bot.command(name='love',
 	description="A little bit of sprinkles for your sundae <3",
@@ -68,4 +68,4 @@ async def whois(context):
 async def art():
 	await bot.say("https://upload.wikimedia.org/wikipedia/commons/3/34/Florida_Box_Turtle_Digon3.jpg")
 
-bot.run ('NDQ4MzI3MDk3NjUyMzQ2ODkw.DeUizg.DKqE4V8RoaGIR2yvus0R4fKlfys')
+bot.run ('NDQ4MzI3MDk3NjUyMzQ2ODkw.DeUizg.DKqE4V8RoaGIR2yvus0R4fKlfys')
